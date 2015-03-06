@@ -3,7 +3,6 @@ angular.module("faceandela.services")
 		var baseRef = new Firebase($cookies.rootRef);
 		var userRef = baseRef.child('users');
 
-
 		return {
 			login: function() {
        baseRef.authWithOAuthPopup("google", function(error, authData) {

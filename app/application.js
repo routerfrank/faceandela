@@ -1,24 +1,25 @@
 //modules
 angular.module('faceandela.controllers', []);
+angular.module('faceandela.directives', []);
 angular.module('faceandela.services', ['firebase','ngCookies']);
 
+
+//directives
+require("./js/directives/header.js");
+
 //services
-require("./js/services/authentication.js")
+require("./js/services/authentication.js");
 
 //controllers
-require("./js/controllers/test.js")
-
-
+require("./js/controllers/main.js");
 
 //filters
-
-
-//routes
 
 
 window.FaceAndela = angular.module("FaceAndela", [
   'faceandela.controllers',
   'faceandela.services',
+  'faceandela.directives',
   'ui.router',
   'ngMaterial',
   'btford.markdown',
@@ -38,8 +39,7 @@ FaceAndela.config(['$stateProvider', '$urlRouterProvider','$locationProvider', f
   $stateProvider
     .state('home', {
       url: "/",
-      templateUrl: "main.html",
-      controllers: "mainCtrl"
+      templateUrl: "main.html"
     })
     .state('profile', {
       url: "/profile",

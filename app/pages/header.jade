@@ -1,4 +1,5 @@
-div(style='padding-bottom: 15px;' ng-controller="mainCtrl")
+header(layout="horizontal")
+div(style='padding-bottom: 15px;')
     md-toolbar.md-accent
         .md-toolbar-tools
           span.md-flex FaceAndela
@@ -16,7 +17,6 @@ div(style='padding-bottom: 15px;' ng-controller="mainCtrl")
                 a(href='#') Edit profile
               li
                 a(href='#' ng-click='logout()') Logout
-           
     md-toolbar.md-warn(ng-if="menu")
       div(class="top-nav")
         ul
