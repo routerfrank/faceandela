@@ -1,10 +1,165 @@
 include header
+hr
 div(layout='column', style='padding-bottom: 15px;')
-      md-content.md-padding(style='height: 600px;')
-        | Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.
-        p
-          | Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
-        |     
-        p
-          | Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros singulis intellegam eu sit.
-        md-button.md-button-raised.md-primary Primary
+  md-content.md-padding
+    .page-container 
+      .container-fluid
+          .row
+            .col-sm-10
+              h1 Starfox221
+              |          
+              |           
+              button.btn.btn-success(type='button') Book me!
+              |   
+              button.btn.btn-info(type='button') Send me a message
+              br
+            |       
+            .col-sm-2
+              a.pull-right(href='/users')
+                img.img-circle.img-responsive(title='profile image', src='http://www.rlsandbox.com/img/profile.jpg')
+          |   
+          br
+          |     
+          .row
+            .col-sm-3
+              // left col
+              ul.list-group
+                li.list-group-item.text-muted(contenteditable='false') Profile
+                |                 
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Joined
+                  |  2.13.2014
+                |                 
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Last seen
+                  |  Yesterday
+                |                     
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Real name
+                  |  Joseph
+                  |  Doe
+                |               
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Role: 
+                  |  Pet Sitter
+              |            
+              .panel.panel-default
+                .panel-heading
+                  | Insured / Bonded?
+                .container
+                .container
+                |                 
+                .panel-body
+                  i.fa.fa-check-square(style='color:green')
+                  |  Yes, I am insured and bonded.
+              |             
+              .panel.panel-default
+                .panel-heading
+                  | Website 
+                  i.fa.fa-link.fa-1x
+                |                 
+                .panel-body
+                  a(href='http://bootply.com') bootply.com
+              |           
+              |             
+              ul.list-group
+                li.list-group-item.text-muted
+                  | Activity 
+                  i.fa.fa-dashboard.fa-1x
+                |                 
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Shares
+                  |  125
+                |                 
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Likes
+                  |  13
+                |                     
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Posts
+                  |  37
+                |                         
+                li.list-group-item.text-right
+                  span.pull-left
+                    strong Followers
+                  |  78
+              |             
+              .panel.panel-default
+                .panel-heading Social Media
+                |                 
+                .panel-body
+                  i.fa.fa-facebook.fa-2x
+                  |   
+                  i.fa.fa-github.fa-2x
+                  |  
+                  |                     
+                  i.fa.fa-twitter.fa-2x
+                  |  
+                  i.fa.fa-pinterest.fa-2x
+                  |   
+                  i.fa.fa-google-plus.fa-2x
+            // /col-3
+            .col-sm-9(contenteditable='false', style='')
+              .panel.panel-default
+                .panel-heading Starfox221&apos;s Bio
+                |                 
+                .panel-body
+                  | A long description about me.
+              |             
+              .panel.panel-default.target
+                .panel-heading(contenteditable='false') Pets I Own
+                |                 
+                .panel-body
+                  .row
+                    .col-md-4
+                      .thumbnail
+                        img(alt='300x200', src='http://lorempixel.com/600/200/people')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        .caption
+                          h3
+                            | Rover
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p
+                            | Cocker Spaniel who loves treats.
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p
+                    | &#x9;&#x9;&#x9;&#x9;
+                    .col-md-4
+                      .thumbnail
+                        img(alt='300x200', src='http://lorempixel.com/600/200/city')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        .caption
+                          h3
+                            | Marmaduke
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p
+                            | Is just another friendly dog.
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p
+                    | &#x9;&#x9;&#x9;&#x9;
+                    .col-md-4
+                      .thumbnail
+                        img(alt='300x200', src='http://lorempixel.com/600/200/sports')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        .caption
+                          h3
+                            | Rocky
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p
+                            | Loves catnip and naps. Not fond of children.
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p
+              |            
+              .panel.panel-default
+                .panel-heading Starfox221&apos;s Bio
+                |                 
+                .panel-body
+                  | A long description about me.
+include footer

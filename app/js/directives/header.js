@@ -10,18 +10,8 @@ angular.module("faceandela.directives", [])
     var userRef = baseRef.child('users');
     $rootScope.currentUser = null;
     
-    $scope.login = function() {
-      Auth.login()
-    }
-
-    $scope.logout = function() {
-      Auth.logout()
-      $rootScope.currentUser = null;
-    }
-
     baseRef.onAuth(function(authData) {
       Auth.auth(authData, function(user) {
-        console.log(user);
         $rootScope.currentUser = user;
       });
     });
@@ -36,4 +26,13 @@ angular.module("faceandela.directives", [])
         $scope.search = $scope.search === true ? false: true;
         $scope.menu = false;
     };
+
+    $scope.login = function() {
+      Auth.login()
+    }
+
+    $scope.logout = function() {
+      Auth.logout()
+      $rootScope.currentUser = null;
+    }
   }])
